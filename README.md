@@ -91,7 +91,7 @@ Requirements gathering list for Spotify playlist-combining application:
 
 This should cover all the major aspects for building the application.
 
-List of tools and technologies needed to build the Spotify playlist-combining application:
+# List of tools and technologies needed to build the Spotify playlist-combining application:
 
 ### 1. **Programming Languages:**
    - **Python** (recommended for back-end if you’ve been using Flask)
@@ -172,7 +172,7 @@ List of tools and technologies needed to build the Spotify playlist-combining ap
    - **CI/CD Tools** (e.g., **GitHub Actions**, **CircleCI**):
      - Automate the testing and deployment process whenever changes are pushed to your repository.
 
-step-by-step **Plan of Action** for building Spotify playlist-combining application:
+# step-by-step **Plan of Action** for building Spotify playlist-combining application:
 
 ### 1. **Project Setup**
    - **Timeline: 1 day**
@@ -271,4 +271,4 @@ step-by-step **Plan of Action** for building Spotify playlist-combining applicat
 
 ---
 
-### Estimated Total Timeline: **10-15 days**
+## Estimated Total Timeline: **10-15 days**
