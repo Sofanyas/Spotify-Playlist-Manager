@@ -272,3 +272,11 @@ This should cover all the major aspects for building the application.
 ---
 
 ## Estimated Total Timeline: **10-15 days**
+
+# Progress Log
+## Day 1
+- Project research/planning
+- Project/dependencies set up
+- Created React/frontend file by running `npx create-react-app frontend`
+- Virtual environment (venv) set up, `.gitignore` set up, and `README.md` set up
+- Set up Spotify developer account with Client ID and Client Secret
