@@ -274,9 +274,18 @@ This should cover all the major aspects for building the application.
 ## Estimated Total Timeline: **10-15 days**
 
 # Progress Log
-## Day 1
+## Day 1: Working on taks day 1
 - Project research/planning
 - Project/dependencies set up
 - Created React/frontend file by running `npx create-react-app frontend`
 - Virtual environment (venv) set up, `.gitignore` set up, and `README.md` set up
 - Set up Spotify developer account with Client ID and Client Secret
+
+## Day 2-3: Working on tasks day 2
+- Created .env on my local to hold sensitive data like credentials
+- Created config.py to map my credentials to keys value pairs in a Config class to be imported into programs
+- Created routes.py to handle the routes and logic of each endpoint
+- Created app.py to be the main program that executes everything
+### Issues
+ - I didn't realize my callback url is only hosted locally so the spotify servers can't reach it. Need to host it using AWS or Render.
+ - Hosting it on render for now.

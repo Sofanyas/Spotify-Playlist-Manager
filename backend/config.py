@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    SECRET_KEY = os.getenv('SECRET_KEY', 'a_secure_default_key')  # Optionally provide a default
+    SECRET_KEY = os.getenv('SECRET_KEY')  # Optionally provide a default
     DEBUG = True  # Set to False in production
     SPOTIPY_CLIENT_ID = os.getenv('SPOTIPY_CLIENT_ID')
     SPOTIPY_CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
