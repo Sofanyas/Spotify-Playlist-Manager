@@ -159,13 +159,20 @@ def callback():
         client_secret=os.getenv('SPOTIPY_CLIENT_SECRET'),
         redirect_uri=os.getenv('SPOTIPY_REDIRECT_URI')
     )
-    token_info = sp_oauth.get_access_token()
+
+    # Retrieve the authorization code from the query parameters
+    code = request.args.get('code')
+
+    # Use the authorization code to get the access token
+    token_info = sp_oauth.get_access_token(code)
 
     if token_info:
+        # Store the access token securely in the session
         session['token_info'] = token_info
         return redirect(url_for('main.user'))
     else:
         return "Authentication failed", 400
+
 
 # Route to display user information after authentication
 @main.route('/user')
