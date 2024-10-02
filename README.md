@@ -281,7 +281,7 @@ This should cover all the major aspects for building the application.
 - Virtual environment (venv) set up, `.gitignore` set up, and `README.md` set up
 - Set up Spotify developer account with Client ID and Client Secret
 
-## Day 2-3: Working on tasks day 2
+## Day 2-4: Working on tasks day 2
 - Created .env on my local to hold sensitive data like credentials
 - Created config.py to map my credentials to keys value pairs in a Config class to be imported into programs
 - Created routes.py to handle the routes and logic of each endpoint
@@ -289,3 +289,7 @@ This should cover all the major aspects for building the application.
 ### Issues
  - I didn't realize my callback url is only hosted locally so the spotify servers can't reach it. Need to host it using AWS or Render.
  - Hosting it on render for now.
+ ### Day 4 Update: Still working on day 2 tasks
+ - hosted login service on render
+ - got rid of .env and config file because I'll be using render's enviormental variables to store all my credentials
+ - updated routes.py file beacuse because SpotifyOAuth was trying to prompt the user interactively (via input) to enter the redirected URL, which is not suitable for a web application. Fixed it by manually passing the authorization code from the query parameters
